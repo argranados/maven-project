@@ -12,5 +12,10 @@ pipeline {
                 }
             }
         }
+        stage('Deploy to Stagging'){
+            steps {
+                build job: 'Deplo yo stagging'
+            }
+        }
     }
 }
